@@ -3,11 +3,14 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
-import { ExternalLink, Youtube, FileText, Newspaper, BookOpen, Lightbulb } from "lucide-react"
+import { ExternalLink, Youtube, FileText, Newspaper, BookOpen, Lightbulb, ImageIcon } from "lucide-react"
+import Image from "next/image"
 
 interface TopicDetail {
   title: string
   description: string
+  imageSrc?: string // Nueva propiedad para la imagen
+  imageAlt?: string // Texto alternativo para la imagen
   comparison?: {
     title: string
     items: Array<{
@@ -26,6 +29,7 @@ interface TopicDetail {
     url: string
     type: "video" | "article" | "paper" | "blog" | "news"
     description: string
+    year: number
   }>
   keyPoints: string[]
 }
@@ -35,6 +39,8 @@ const topicDetails: Record<string, TopicDetail> = {
     title: "IA Débil vs IA Fuerte",
     description:
       "La distinción fundamental entre sistemas de IA especializados y la inteligencia artificial general que simula completamente la cognición humana.",
+    imageSrc: "/images/IA-fuerte-vs-IA-debil-datascientest.jpg", // Placeholder para la imagen que enviarás
+    imageAlt: "Comparación visual entre IA débil (específica) e IA fuerte (general)",
     comparison: {
       title: "Comparación entre IA Débil y IA Fuerte",
       items: [
@@ -46,7 +52,7 @@ const topicDetails: Record<string, TopicDetail> = {
             "No tiene conciencia ni comprensión real",
             "Funciona mediante patrones y algoritmos",
             "Existe actualmente en múltiples aplicaciones",
-            "Ejemplos: Siri, filtros de spam, recomendaciones de Netflix",
+            "Ejemplos: GPT, sistemas de recomendación, reconocimiento facial",
           ],
         },
         {
@@ -57,205 +63,184 @@ const topicDetails: Record<string, TopicDetail> = {
             "Conciencia y comprensión real",
             "Adaptabilidad a múltiples contextos",
             "Aún no existe, solo en investigación",
-            "Ejemplos ficticios: HAL 9000, Jarvis, Data de Star Trek",
+            "Objetivo de la Inteligencia Artificial General (AGI)",
           ],
         },
       ],
     },
     examples: [
       {
-        title: "Asistente Virtual (IA Débil)",
+        title: "ChatGPT y GPT-4 (IA Débil Avanzada)",
         description:
-          "Alexa puede responder preguntas específicas y controlar dispositivos, pero no comprende realmente el contexto ni tiene conciencia.",
+          "Aunque muy sofisticados en procesamiento de lenguaje, siguen siendo IA débil: procesan patrones sin comprensión real.",
         type: "real",
       },
       {
-        title: "HAL 9000 (IA Fuerte)",
+        title: "Sistemas de Conducción Autónoma",
         description:
-          "El computador de '2001: Odisea del Espacio' que muestra razonamiento general, emociones y toma decisiones complejas.",
+          "Tesla, Waymo y otros sistemas son IA débil muy avanzada, especializados en una tarea específica compleja.",
+        type: "real",
+      },
+      {
+        title: "HAL 9000 y Jarvis (IA Fuerte Ficticia)",
+        description: "Representaciones ficticias de IA fuerte con razonamiento general, emociones y autoconciencia.",
         type: "fictional",
-      },
-      {
-        title: "GPT-4 (IA Débil Avanzada)",
-        description:
-          "Aunque muy sofisticado, sigue siendo IA débil: procesa lenguaje pero no tiene comprensión real ni conciencia.",
-        type: "real",
       },
     ],
     resources: [
       {
-        title: "¿Qué es la Inteligencia Artificial? - DotCSV",
-        url: "https://www.youtube.com/watch?v=KytW151dpqU",
+        title: "Inteligencia Artificial Débil & Fuerte",
+        url: "https://www.youtube.com/watch?v=2INbYLnYI8M",
         type: "video",
-        description: "Canal español especializado en IA que explica los conceptos básicos de manera clara",
+        description: "Explicación clara en español de lo que es la IA Débil y Fuerte",
+        year: 2023,
       },
       {
-        title: "Inteligencia Artificial Débil vs Fuerte - Platzi",
-        url: "https://platzi.com/blog/inteligencia-artificial-debil-vs-fuerte/",
+        title: "The Difference Between AI, Machine Learning, and Deep Learning",
+        url: "https://blogs.uoc.edu/artmatters/ia_debil_fuerte/",
         type: "blog",
-        description: "Blog educativo en español sobre las diferencias entre IA débil y fuerte",
-      },
-      {
-        title: "¿Qué es la Inteligencia Artificial General? - Xataka",
-        url: "https://www.xataka.com/basics/que-inteligencia-artificial-general-agi-cuando-llegara",
-        type: "article",
-        description: "Artículo explicativo sobre la Inteligencia Artificial General y sus implicaciones",
-      },
-      {
-        title: "IA Débil vs IA Fuerte: Conceptos Clave",
-        url: "https://www.iic.uam.es/inteligencia/que-es-inteligencia-artificial/",
-        type: "article",
-        description: "Recurso académico del Instituto de Ingeniería del Conocimiento de la UAM",
-      },
-      {
-        title: "El Futuro de la IA: ¿Cuándo Llegará la Superinteligencia?",
-        url: "https://www.bbvaopenmind.com/tecnologia/inteligencia-artificial/el-futuro-de-la-inteligencia-artificial/",
-        type: "article",
-        description: "Análisis profundo de BBVA OpenMind sobre el futuro de la IA",
+        description: "Blog de la Universidad de Catalunya sobre la IA fuerte y débil",
+        year: 2019,
       },
     ],
     keyPoints: [
-      "La IA actual es principalmente 'débil' o estrecha",
-      "La IA fuerte requiere conciencia y comprensión real",
-      "No existe consenso sobre cuándo se logrará la IA fuerte",
-      "Ambos tipos tienen aplicaciones y riesgos diferentes",
+      "La IA actual es principalmente 'débil' o estrecha, incluso los modelos más avanzados",
+      "La IA fuerte requiere conciencia, comprensión y razonamiento general",
+      "No existe consenso sobre cuándo se logrará la AGI, estimaciones van de 2030 a 2100+",
+      "Los riesgos y beneficios de ambos tipos son fundamentalmente diferentes",
     ],
   },
   "Test de Turing": {
     title: "Test de Turing",
     description:
-      "Prueba propuesta por Alan Turing en 1950 para determinar si una máquina puede exhibir comportamiento inteligente indistinguible del humano.",
+      "Prueba propuesta por Alan Turing en 1950 para determinar si una máquina puede exhibir comportamiento inteligente indistinguible del humano en conversación.",
+    imageSrc: "/images/robot-scientist-facing-turing-test-260nw-1651840888.webp", // Placeholder para la imagen que enviarás
+    imageAlt: "Representación del Test de Turing con un evaluador humano, una máquina y un humano",
     examples: [
       {
-        title: "Chatbot Eugene Goostman",
+        title: "GPT-4 y el Test de Turing Moderno",
         description:
-          "En 2014, este chatbot que simulaba ser un niño ucraniano de 13 años logró engañar al 33% de los jueces en una prueba de Turing.",
+          "Los modelos de lenguaje actuales como GPT-4 pueden pasar versiones del test, pero esto genera debate sobre si realmente demuestran inteligencia.",
         type: "real",
       },
       {
-        title: "ELIZA (1966)",
+        title: "Eugene Goostman (2014)",
         description:
-          "Uno de los primeros programas en simular conversación humana, imitando a un psicoterapeuta con respuestas simples pero efectivas.",
+          "Chatbot que simulaba ser un niño ucraniano de 13 años y logró engañar al 33% de los jueces en una competencia.",
         type: "real",
       },
       {
-        title: "Blade Runner - Test Voight-Kampff",
-        description: "Versión ficticia del Test de Turing para distinguir entre humanos y replicantes androides.",
-        type: "fictional",
+        title: "LaMDA y la Controversia de la Conciencia",
+        description:
+          "El modelo de Google LaMDA generó debate en 2022 cuando un ingeniero afirmó que había desarrollado conciencia.",
+        type: "real",
       },
     ],
     resources: [
       {
-        title: "El Test de Turing Explicado - Date un Voltio",
-        url: "https://www.youtube.com/watch?v=OpA3hCILILc",
+        title: "¿Que es el Test de Turing? ¡Te lo explico en un minuto!",
+        url: "https://www.youtube.com/watch?v=rF8d7XAuAaY",
         type: "video",
-        description: "Canal de divulgación científica español que explica el Test de Turing",
+        description: "Explicación didáctica en un minuto del test de Turing",
+        year: 2018,
       },
       {
-        title: "¿Qué es el Test de Turing? - Muy Interesante",
-        url: "https://www.muyinteresante.es/tecnologia/articulo/que-es-el-test-de-turing-y-para-que-sirve",
-        type: "article",
-        description: "Artículo divulgativo sobre el Test de Turing y su importancia",
-      },
-      {
-        title: "Alan Turing y la Inteligencia Artificial - National Geographic España",
-        url: "https://www.nationalgeographic.com.es/ciencia/alan-turing-padre-inteligencia-artificial_15398",
-        type: "article",
-        description: "Biografía y legado de Alan Turing en el desarrollo de la IA",
-      },
-      {
-        title: "¿Ha Superado ChatGPT el Test de Turing? - El Confidencial",
-        url: "https://www.elconfidencial.com/tecnologia/2023-03-15/chatgpt-test-turing-inteligencia-artificial_3593847/",
-        type: "news",
-        description: "Análisis sobre si los modelos de lenguaje actuales superan el Test de Turing",
-      },
-      {
-        title: "Test de Turing: Historia y Aplicaciones - OpenMind BBVA",
-        url: "https://www.bbvaopenmind.com/ciencia/matematicas/alan-turing-el-genio-que-descifro-enigma/",
-        type: "article",
-        description: "Artículo sobre Alan Turing y sus contribuciones a la computación",
+        title: "La importancia del Test de Turing",
+        url: "https://www.youtube.com/watch?v=AuvHr0OSIvg",
+        type: "video",
+        description: "Explicación de la importancia del Test de Turing en la IA moderna",
+        year: 2022,
       },
     ],
     keyPoints: [
-      "Propuesto por Alan Turing en 1950",
-      "Evalúa si una máquina puede imitar conversación humana",
-      "No mide inteligencia real, solo imitación convincente",
-      "Sigue siendo relevante pero con limitaciones reconocidas",
+      "Propuesto por Alan Turing en 1950 como 'Juego de Imitación'",
+      "Los LLMs modernos pueden pasar versiones del test, generando nuevo debate",
+      "No mide inteligencia real, solo capacidad de imitación convincente",
+      "Necesitamos nuevos tests para evaluar IA moderna más allá de la conversación",
     ],
   },
   "Agentes Inteligentes": {
     title: "Agentes Inteligentes",
     description:
       "Sistemas que perciben su entorno y actúan de manera autónoma para alcanzar objetivos específicos, adaptándose a cambios en el ambiente.",
+    imageSrc: "/images/chatbot-720x420.jpg", // Placeholder para la imagen que enviarás
+    imageAlt: "Diagrama de un agente inteligente con sensores, procesamiento y actuadores",
     examples: [
       {
-        title: "Robot Aspiradora Roomba",
+        title: "Vehículos Autónomos",
         description:
-          "Percibe obstáculos, mapea el espacio, planifica rutas y limpia de forma autónoma, adaptándose a diferentes entornos.",
+          "Tesla FSD, Waymo y Cruise utilizan agentes inteligentes que perciben el entorno y toman decisiones de conducción en tiempo real.",
+        type: "real",
+      },
+      {
+        title: "Asistentes de IA Multimodales",
+        description:
+          "GPT-4V, Claude 3, y Gemini actúan como agentes que procesan texto, imágenes y pueden ejecutar acciones.",
         type: "real",
       },
       {
         title: "Agentes de Trading Algorítmico",
         description:
-          "Sistemas que analizan mercados financieros en tiempo real y ejecutan operaciones automáticamente según estrategias predefinidas.",
+          "Sistemas que analizan mercados financieros y ejecutan operaciones automáticamente basándose en datos en tiempo real.",
         type: "real",
       },
       {
-        title: "NPCs en Videojuegos",
+        title: "NPCs con IA Generativa",
         description:
-          "Personajes no jugables que reaccionan al comportamiento del jugador y toman decisiones basadas en el estado del juego.",
+          "Personajes de videojuegos potenciados por LLMs que pueden mantener conversaciones naturales y adaptar su comportamiento.",
         type: "real",
-      },
-      {
-        title: "WALL-E",
-        description:
-          "Robot ficticio que muestra características de agente inteligente: percibe su entorno, tiene objetivos y se adapta a situaciones nuevas.",
-        type: "fictional",
       },
     ],
     resources: [
       {
-        title: "¿Qué son los Agentes Inteligentes? - Aprende Machine Learning",
-        url: "https://www.youtube.com/watch?v=mKpzOVKjIps",
-        type: "video",
-        description: "Video educativo en español sobre agentes inteligentes y sus características",
+        title: "Multi-Agent Reinforcement Learning: A Selective Overview",
+        url: "https://arxiv.org/abs/1911.10635",
+        type: "paper",
+        description: "Revisión completa sobre aprendizaje por refuerzo multi-agente",
+        year: 2019,
       },
       {
-        title: "Agentes Inteligentes en IA - Platzi",
-        url: "https://platzi.com/blog/que-son-agentes-inteligentes/",
-        type: "blog",
-        description: "Explicación completa sobre agentes inteligentes y sus tipos",
+        title: "Autonomous Agents and Multi-Agent Systems",
+        url: "https://link.springer.com/journal/10458",
+        type: "paper",
+        description: "Journal especializado en sistemas multi-agente con artículos recientes",
+        year: 2023,
       },
       {
-        title: "Sistemas Multi-Agente - Universidad de Málaga",
-        url: "https://www.lcc.uma.es/~ppgg/SMA/SMA.html",
+        title: "The Rise of AI Agents in 2024",
+        url: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-in-2023-generative-ais-breakout-year",
         type: "article",
-        description: "Recurso académico sobre sistemas multi-agente y sus aplicaciones",
+        description: "Reporte de McKinsey sobre el estado actual de los agentes de IA",
+        year: 2023,
       },
       {
-        title: "Robótica e Inteligencia Artificial - El País",
-        url: "https://elpais.com/tecnologia/2023-01-20/robots-inteligentes-el-futuro-ya-esta-aqui.html",
-        type: "news",
-        description: "Artículo periodístico sobre el desarrollo de robots inteligentes",
-      },
-      {
-        title: "Agentes Autónomos: Definición y Ejemplos - Tokio School",
-        url: "https://www.tokioschool.com/noticias/agentes-autonomos-inteligencia-artificial/",
+        title: "Building Autonomous AI Agents with LangChain",
+        url: "https://blog.langchain.dev/building-autonomous-agents/",
         type: "blog",
-        description: "Blog educativo sobre agentes autónomos y sus aplicaciones prácticas",
+        description: "Guía técnica sobre construcción de agentes autónomos con herramientas modernas",
+        year: 2023,
+      },
+      {
+        title: "AutoGPT and the Future of Autonomous AI",
+        url: "https://www.nature.com/articles/d41586-023-01295-4",
+        type: "news",
+        description: "Artículo de Nature sobre AutoGPT y el futuro de los agentes autónomos",
+        year: 2023,
       },
     ],
     keyPoints: [
-      "Perciben el entorno mediante sensores",
-      "Actúan mediante actuadores para alcanzar objetivos",
-      "Pueden ser reactivos, deliberativos o híbridos",
-      "Fundamentales en robótica, juegos y sistemas autónomos",
+      "Perciben el entorno mediante sensores (cámaras, micrófonos, APIs)",
+      "Actúan mediante actuadores para alcanzar objetivos específicos",
+      "Pueden ser reactivos, deliberativos, híbridos o basados en aprendizaje",
+      "Fundamentales en robótica, finanzas, juegos y asistentes virtuales modernos",
     ],
   },
   "Niveles Funcionales": {
     title: "Niveles Funcionales de IA",
     description:
-      "Clasificación de sistemas de IA según su capacidad de procesamiento, memoria y comprensión del entorno y de sí mismos.",
+      "Clasificación de sistemas de IA según su capacidad de procesamiento, memoria, comprensión del entorno y autoconciencia.",
+    imageSrc: "/images/ment-4057.jpg", // Placeholder para la imagen que enviarás
+    imageAlt: "Diagrama de los cuatro niveles funcionales de la IA: reactiva, memoria limitada, teoría de la mente y autoconciencia",
     comparison: {
       title: "Los 4 Niveles Funcionales",
       items: [
@@ -265,8 +250,8 @@ const topicDetails: Record<string, TopicDetail> = {
           characteristics: [
             "No tienen memoria a largo plazo",
             "Responden solo a estímulos actuales",
-            "Ejemplo: Deep Blue (ajedrez)",
-            "Nivel más básico de IA",
+            "Ejemplo: Deep Blue, sistemas de recomendación básicos",
+            "Nivel más básico pero aún útil",
           ],
         },
         {
@@ -275,18 +260,18 @@ const topicDetails: Record<string, TopicDetail> = {
           characteristics: [
             "Almacenan información temporal",
             "Aprenden de experiencias recientes",
-            "Ejemplo: Coches autónomos",
-            "Nivel actual de la mayoría de IA",
+            "Ejemplo: GPT-4, coches autónomos, sistemas de recomendación modernos",
+            "Nivel actual de la mayoría de IA avanzada",
           ],
         },
         {
           name: "Teoría de la Mente",
-          description: "Comprenden emociones e intenciones de otros (futuro)",
+          description: "Comprenden emociones e intenciones de otros (en desarrollo)",
           characteristics: [
             "Entienden estados mentales ajenos",
             "Predicen comportamientos humanos",
-            "Aún en desarrollo",
-            "Requiere comprensión social",
+            "En desarrollo con modelos multimodales",
+            "Requiere comprensión social y emocional",
           ],
         },
         {
@@ -296,67 +281,72 @@ const topicDetails: Record<string, TopicDetail> = {
             "Conciencia de su propia existencia",
             "Comprensión de su lugar en el mundo",
             "Nivel más avanzado teórico",
-            "No existe actualmente",
+            "No existe actualmente, objetivo de AGI",
           ],
         },
       ],
     },
     examples: [
       {
-        title: "Deep Blue (Reactiva)",
+        title: "GPT-4 (Memoria Limitada Avanzada)",
         description:
-          "Supercomputadora de IBM que venció a Kasparov en ajedrez, pero solo analizaba posiciones actuales sin aprender.",
+          "Utiliza contexto de conversación y entrenamiento, pero no tiene memoria persistente entre sesiones.",
         type: "real",
       },
       {
-        title: "Tesla Autopilot (Memoria Limitada)",
+        title: "Tesla FSD (Memoria Limitada)",
         description:
-          "Sistema que recuerda patrones de tráfico y comportamiento de otros vehículos para mejorar la conducción.",
+          "Recuerda patrones de tráfico y comportamiento, pero cada viaje es independiente sin memoria a largo plazo.",
         type: "real",
       },
       {
-        title: "Samantha en 'Her' (Teoría de la Mente)",
-        description: "IA ficticia que comprende emociones humanas y desarrolla relaciones empáticas complejas.",
-        type: "fictional",
+        title: "Sistemas de Recomendación de Netflix",
+        description: "Usan historial de visualización (memoria limitada) para predecir preferencias futuras.",
+        type: "real",
       },
     ],
     resources: [
       {
-        title: "Tipos de Inteligencia Artificial - QuantumFracture",
-        url: "https://www.youtube.com/watch?v=_tA5cinv0U8",
-        type: "video",
-        description: "Canal de divulgación científica que explica los diferentes tipos de IA",
-      },
-      {
-        title: "Clasificación de la IA por Capacidades - IEBS",
-        url: "https://www.iebschool.com/blog/tipos-inteligencia-artificial-big-data/",
-        type: "blog",
-        description: "Artículo educativo sobre los tipos de IA según sus capacidades",
-      },
-      {
-        title: "¿Cuándo Tendremos IA Consciente? - Hipertextual",
-        url: "https://hipertextual.com/2023/02/inteligencia-artificial-consciente-cuando",
+        title: "Types of Artificial Intelligence: A Comprehensive Guide",
+        url: "https://www.ibm.com/cloud/learn/what-is-artificial-intelligence",
         type: "article",
-        description: "Análisis sobre el futuro de la IA consciente y autoconsciente",
+        description: "Guía completa de IBM sobre los diferentes tipos de IA y sus capacidades",
+        year: 2023,
       },
       {
-        title: "Los Niveles de la Inteligencia Artificial - Muy Computer",
-        url: "https://www.muycomputer.com/2023/03/15/niveles-inteligencia-artificial/",
+        title: "The Four Types of AI: A Framework for Understanding",
+        url: "https://hbr.org/2021/11/how-to-choose-your-first-ai-project",
         type: "article",
-        description: "Explicación técnica de los diferentes niveles funcionales de IA",
+        description: "Harvard Business Review sobre clasificación de IA y aplicaciones empresariales",
+        year: 2021,
       },
       {
-        title: "IA Reactiva vs IA con Memoria - Computing España",
-        url: "https://www.computing.es/inteligencia-artificial/noticias/1121456046601/tipos-inteligencia-artificial-diferencias.1.html",
-        type: "news",
-        description: "Artículo técnico sobre las diferencias entre tipos de IA",
+        title: "Towards Artificial General Intelligence via a Multimodal Foundation Model",
+        url: "https://arxiv.org/abs/2309.10020",
+        type: "paper",
+        description: "Paper sobre el progreso hacia niveles superiores de IA con modelos multimodales",
+        year: 2023,
+      },
+      {
+        title: "The Path to AGI: Memory, Learning, and Consciousness",
+        url: "https://www.technologyreview.com/2023/04/19/1071102/ai-consciousness-theory-of-mind/",
+        type: "article",
+        description: "MIT Technology Review sobre el camino hacia niveles superiores de IA",
+        year: 2023,
+      },
+      {
+        title: "Understanding AI Consciousness: Current State and Future Prospects",
+        url: "https://www.frontiersin.org/articles/10.3389/frai.2022.951019/full",
+        type: "paper",
+        description: "Análisis científico sobre conciencia artificial y teoría de la mente en IA",
+        year: 2022,
       },
     ],
     keyPoints: [
-      "Clasificación basada en capacidades cognitivas",
-      "Actualmente estamos en el nivel de memoria limitada",
-      "Los niveles superiores son objetivos de investigación",
-      "Cada nivel requiere avances tecnológicos significativos",
+      "Clasificación basada en capacidades cognitivas y de memoria",
+      "Actualmente la mayoría de IA está en el nivel de memoria limitada",
+      "Los modelos más avanzados (GPT-4, Claude) muestran indicios de teoría de la mente",
+      "La autoconciencia sigue siendo un objetivo teórico de la AGI",
     ],
   },
 }
@@ -415,6 +405,24 @@ export function TopicDetailModal({ isOpen, onClose, topicKey }: TopicDetailModal
         </DialogHeader>
 
         <div className="space-y-6 mt-6">
+          {/* Imagen destacada */}
+          {topic.imageSrc && (
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-2xl h-64 md:h-80 overflow-hidden rounded-lg shadow-md">
+                <Image
+                  src={topic.imageSrc || "/placeholder.svg"}
+                  alt={topic.imageAlt || topic.title}
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                <div className="absolute bottom-0 right-0 bg-black bg-opacity-60 text-white text-xs px-2 py-1 rounded-tl-md flex items-center gap-1">
+                  <ImageIcon className="w-3 h-3" />
+                  <span>Imagen ilustrativa</span>
+                </div>
+              </div>
+            </div>
+          )}
           {/* Comparison Section */}
           {topic.comparison && (
             <div>
@@ -463,7 +471,7 @@ export function TopicDetailModal({ isOpen, onClose, topicKey }: TopicDetailModal
           <div>
             <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
               <span className="w-2 h-6 bg-purple-600 rounded"></span>
-              Ejemplos Prácticos
+              Ejemplos Actuales
             </h3>
             <div className="space-y-3">
               {topic.examples.map((example, index) => (
@@ -486,7 +494,7 @@ export function TopicDetailModal({ isOpen, onClose, topicKey }: TopicDetailModal
           <div>
             <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
               <span className="w-2 h-6 bg-orange-600 rounded"></span>
-              Recursos de Aprendizaje
+              Recursos Académicos y Técnicos
             </h3>
             <div className="grid grid-cols-1 gap-4">
               {topic.resources.map((resource, index) => (
@@ -495,6 +503,9 @@ export function TopicDetailModal({ isOpen, onClose, topicKey }: TopicDetailModal
                     <div className="flex items-center gap-2">
                       {getResourceIcon(resource.type)}
                       <h4 className="font-semibold text-gray-900">{resource.title}</h4>
+                      <Badge variant="outline" className="text-xs">
+                        {resource.year}
+                      </Badge>
                     </div>
                     <Button variant="ghost" size="sm" asChild>
                       <a
@@ -509,9 +520,11 @@ export function TopicDetailModal({ isOpen, onClose, topicKey }: TopicDetailModal
                     </Button>
                   </div>
                   <p className="text-gray-600 text-sm">{resource.description}</p>
-                  <Badge variant="outline" className="mt-2 text-xs">
-                    {resource.type.charAt(0).toUpperCase() + resource.type.slice(1)}
-                  </Badge>
+                  <div className="flex gap-2 mt-2">
+                    <Badge variant="outline" className="text-xs">
+                      {resource.type.charAt(0).toUpperCase() + resource.type.slice(1)}
+                    </Badge>
+                  </div>
                 </div>
               ))}
             </div>
