@@ -1,0 +1,447 @@
+¿Qué es la Inteligencia Artificial?
+La Inteligencia Artificial (IA) es un área de la informática que se encarga de desarrollar sistemas capaces de realizar tareas que normalmente requieren inteligencia humana. Estas tareas incluyen aprender, razonar, resolver problemas, comprender el lenguaje natural, percibir el entorno, entre otras. Ejemplo: Un asistente como Google Assistant puede entender preguntas, buscar información y responderte como lo haría una persona. necesitan: aprender → guardar → usar conocimientos.
+Para funcionar, la IA necesita:
+Adquirir conocimientos: Ejemplo: Un sistema que analiza datos médicos para aprender síntomas de enfermedades.
+Almacenar conocimientos: Ejemplo: Un sistema experto guarda reglas médicas y casos clínicos para hacer diagnósticos.
+Usar esos conocimientos para actuar o razonar: Ejemplo: Un coche autónomo usa sensores e información previa para frenar ante un peatón.
+Breve historia de la IA: La evolución de la IA comenzó con ideas fundamentales:
+Charles Babbage diseñó la máquina analítica, un prototipo de computadora. Ejemplo: Aunque nunca se construyó completamente, sentó las bases de la computación moderna.
+George Boole creó el álgebra booleana, clave para tomar decisiones lógicas en computadoras. Ejemplo: En programación, usamos condiciones como "si A y B son verdaderos, entonces...".
+Alan Turing propuso la máquina universal y el Test de Turing, que evalúa si una máquina puede simular a un humano. Ejemplo: Un chatbot que conversa como una persona pasaría el Test de Turing si nadie nota que es una IA.
+Marvin Minsky desarrolló simuladores de redes neuronales y asesoró películas de ciencia ficción. Ejemplo: El personaje HAL 9000 en 2001: Odisea del espacio fue inspirado por ideas reales sobre IA.
+Tipos de Inteligencia Artificial
+IA Débil (Estrecha): Es una IA enfocada en tareas específicas. No tiene conciencia ni pensamiento general. Ejemplo:
+Siri: entiende comandos de voz, pero no puede mantener una conversación profunda.
+Filtros de spam: detectan correos basura, pero no pueden hacer tareas diferentes.
+IA Fuerte (General): Simula completamente la inteligencia humana. Puede aprender, adaptarse y razonar en múltiples contextos. Aún no existe, pero se investiga. Ejemplo (ficción):
+Jarvis, el asistente de Iron Man. Aprende, interactúa, toma decisiones y razona como un humano.
+Samantha: Asistente de voz con personalidad y sentimientos.
+Ava: Robot humanoide con inteligencia, emociones y conciencia de sí misma.
+Niveles funcionales de IA
+1. Máquinas reactivas: No tienen memoria. Responden solo al presente. Ejemplo: Deep Blue, la computadora de IBM que venció a Kasparov en ajedrez. Analizaba jugadas pero no aprendía.
+2. Memoria limitada: Usan experiencias recientes para tomar decisiones. Ejemplo:Coches autónomos: recuerdan el comportamiento de autos cercanos para predecir maniobras y evitar accidentes.
+3. Teoría de la mente: Capacidad futura para comprender emociones, intenciones y pensamientos humanos. Ejemplo (ficticio):Un robot que detecta si estás triste y cambia su comportamiento para consolarte.
+4. Autoconsciencia: IA que se reconoce a sí misma como un ente individual. Aún no existe. Ejemplo (ficticio): Ex Machina: una IA que comprende su existencia y actúa por cuenta propia.
+Modelos de IA (según Russell y Norvig)
+Sistemas que piensan como humanos: Intentan replicar el pensamiento humano. Ejemplo: Sistemas que simulan decisiones humanas en psicología o neurociencia.
+Sistemas que actúan como humanos: Imitan comportamientos humanos. Ejemplo: Robots humanoides como Sophia, que habla, se mueve y reacciona como una persona.
+Sistemas que piensan racionalmente: Aplican lógica formal para razonar y resolver problemas. Ejemplo:Un programa que usa lógica matemática para planificar la mejor ruta de entrega.
+Sistemas que actúan racionalmente: Toman decisiones óptimas con base en la situación. Ejemplo: Un agente inteligente en un videojuego que esquiva enemigos de forma eficiente.
+Herramientas asociadas a la IA
+Big Data: grandes volúmenes de datos que necesitan procesamiento inteligente. Ejemplo: Netflix usa Big Data para recomendarte series.
+Machine Learning: sistemas que aprenden de los datos. Ejemplo: Gmail aprende a detectar y filtrar correos spam según tu historial.
+Deep Learning: aprendizaje profundo basado en redes neuronales. Ejemplo: Reconocimiento facial en fotos de Facebook.
+Sistemas Expertos: simulan el razonamiento de un experto humano. Ejemplo: Un sistema que ayuda a diagnosticar enfermedades en medicina.
+Chatbots: conversan con humanos. Ejemplo: El chat de atención al cliente de una tienda online.
+Robots: dispositivos físicos que ejecutan acciones. Ejemplo: Un robot aspiradora que limpia solo, como el Roomba.
+Problema: situación de dificultad o incertidumbre que impide lograr un objetivo y necesita ser resuelta usando métodos, conocimiento o estrategias.
+Resolución de Problemas: La IA resuelve problemas definiendo claramente:
+Estado inicial.
+
+
+Acciones posibles.
+
+
+Estado objetivo.
+
+
+Reglas y límites del entorno.
+Ejemplo:Un asistente de IA que ayuda a encontrar el camino más corto al trabajo, considerando tráfico, tiempo y medios de transporte.
+Juegos y resolución de problemas: Los juegos son ideales para aplicar IA porque implican objetivos, reglas y toma de decisiones. Ejemplo: En un juego de estrategia como Age of Empires, la IA administra recursos, construye y ataca al jugador, adaptando su estrategia. Problemas ocultos: En juegos como Minecraft, el jugador debe aprender a sobrevivir, aunque no se lo digan explícitamente.
+Inferencia: La inferencia es el proceso lógico de llegar a conclusiones a partir de ciertas premisas. Ejemplo:
+Premisa: "Si llueve, me mojo"
+Premisa: "Está lloviendo"
+Conclusión: "Me mojo".
+La IA utiliza reglas de inferencia como el Modus Ponens, Silogismo Hipotético, etc., para generar nuevos conocimientos.
+¿Qué es un sistema inteligente? Un sistema inteligente es aquel que puede resolver problemas, aprender y adaptarse al entorno.
+Debe:
+Razonar: para tomar decisiones. Ejemplo: elegir entre varias rutas según tráfico.
+Aprender: de experiencias pasadas. Ejemplo: mejorar recomendaciones según preferencias del usuario.
+Interactuar: comunicarse con otros. Ejemplo: asistentes como Alexa responden a los usuarios y se conectan con otros dispositivos.
+Disciplinas relacionadas con la IA
+La IA se apoya en múltiples áreas:
+Filosofía: plantea preguntas sobre la conciencia y el razonamiento.
+Matemáticas: proporciona el lenguaje lógico para la inferencia.
+Psicología: estudia cómo piensan y actúan las personas.
+Lingüística: aporta modelos sobre cómo procesamos el lenguaje
+Neurociencia: estudia cómo funciona el cerebro humano
+Economía: analiza cómo se toman decisiones bajo incertidumbre.
+Teoría de control y cibernética: estudia sistemas autónomos.
+Computación: proporciona el hardware y software para implementar IA.
+Ejemplo: La neurociencia ayudó a crear redes neuronales artificiales, inspiradas en cómo las neuronas del cerebro procesan información.
+Definiciones de IA según expertos
+"El estudio de cómo hacer que las computadoras realicen tareas que, por ahora, solo las personas pueden hacer" – Rich & Knight.
+"El arte de crear máquinas que hagan funciones que requieren inteligencia cuando las hacen los humanos" – Kurzwell.
+"La automatización de actividades relacionadas con el pensamiento humano: decisiones, resolución de problemas, aprendizaje..." – Bellman.
+Ejemplo: Un asistente virtual que responde preguntas, como Siri o Alexa, automatiza una tarea típicamente humana: contestar y razonar.
+Cuatro enfoques sobre la IA (Russell y Norvig)
+Pensar como humanos: Se centra en modelar procesos mentales como los del cerebro humano. Ejemplo: El sistema GPS (General Problem Solver) de Newell y Simon, que emulaba cómo una persona resolvería problemas paso a paso.
+Pensar racionalmente Aplica lógica formal para razonar de manera correcta según reglas. Ejemplo: "Todos los humanos son mortales. Sócrates es humano. Entonces, Sócrates es mortal." Esto puede representarse lógicamente y ser procesado por una IA.
+Actuar como humanos Evalúa si una máquina puede imitar el comportamiento humano. Usa como referencia el Test de Turing, que propone que si no se puede distinguir entre una persona y una máquina al conversar, entonces la máquina es inteligente. Ejemplo: Un chatbot que engaña a una persona haciéndole creer que es humano.
+Actuar racionalmente Un agente racional es aquel que elige la mejor acción posible para lograr su objetivo, dadas las condiciones y recursos. Ejemplo: Un asistente de navegación que recomienda rutas según el tráfico, el clima y la hora, buscando minimizar el tiempo de llegada.
+¿Qué es un agente inteligente? Un agente inteligente es un sistema que percibe su entorno y actúa en consecuencia para alcanzar un objetivo.Ejemplo: Un robot aspiradora que detecta obstáculos, planifica rutas y limpia la casa de forma autónoma.
+Características de un agente:
+Percibe el entorno mediante sensores.
+Toma decisiones usando reglas, conocimiento o aprendizaje.
+Actúa usando actuadores (como ruedas, brazos, etc.).
+Existen sistemas multi-agente, donde varios agentes interactúan para cumplir tareas complejas. Ejemplo: En un juego en línea, varios bots cooperan o compiten usando IA, simulando estrategia y trabajo en equipo.
+Técnicas de la IA: Las técnicas de IA se dividen en simbólicas y no simbólicas:
+Técnicas simbólicas (lógicas)
+Se basan en reglas y estructuras lógicas.
+Utilizan representaciones formales del conocimiento.
+Ejemplos:
+Árboles de búsqueda: exploran distintas soluciones posibles.
+Sistemas basados en reglas: si A sucede, entonces hacer B.
+Reducción de metas: dividir el problema en subproblemas.
+Técnicas no simbólicas (biológicas): Inspiradas en procesos naturales, permiten mayor adaptabilidad.
+Ejemplos:
+Redes neuronales: imitan el cerebro humano. Muy usadas en reconocimiento de voz o imágenes.
+Algoritmos genéticos: simulan la evolución biológica para optimizar soluciones
+Aprendizaje por refuerzo: el sistema aprende mediante ensayo y error.
+Historia de la IA
+Alan Turing (1950) propuso el Test de Turing y sentó las bases para el pensamiento computacional.
+John McCarthy (1956) acuñó el término "Inteligencia Artificial" y organizó la conferencia de Dartmouth, considerada el nacimiento oficial de la IA.
+Durante los años 60-80 se desarrollaron sistemas expertos y técnicas de lógica.
+En los años 90-2000 surgieron nuevas técnicas como redes neuronales y machine learning.
+En la actualidad, la IA está presente en múltiples áreas de la vida diaria.
+Ejemplo: Aplicaciones como Google Maps, traductores automáticos, asistentes de voz o algoritmos de redes sociales.
+Áreas de aplicación de la IA
+Áreas básicas
+Representación del conocimiento
+Resolución de problemas
+Búsqueda
+Áreas específicas
+Tratamiento del Lenguaje Natural (TLN): permite a las máquinas entender y generar lenguaje humano. Ejemplo: Traductores automáticos como Google Translate.
+Razonamiento automático: toma decisiones basadas en lógica y datos. Ejemplo: Sistemas legales automatizados que evalúan jurisprudencia.
+Sistemas expertos: ayudan en decisiones especializadas. Ejemplo: Diagnóstico médico asistido por computadora.
+Aprendizaje automático (Machine Learning): mejora del rendimiento a partir de la experiencia Ejemplo: Netflix aprende tus gustos y recomienda series.
+Agentes autónomos: operan sin intervención humana directa. Ejemplo: Robots industriales que ensamblan autos.
+Robots autónomos: perciben el entorno y actúan físicamente. Ejemplo: Robots de reparto como los que usan Amazon o Starship.
+Reconocimiento de imágenes: identifica objetos, rostros o escenas. Ejemplo: Desbloqueo facial en teléfonos móviles.
+Juegos: simulación de estrategia e inteligencia en tiempo real. Ejemplo: IA que juega al ajedrez o videojuegos como StarCraft.
+Diferencias con la programación tradicional
+La programación clásica asume que:
+Se conoce toda la información.
+
+
+El problema tiene una solución clara y algoritmos exactos.
+En cambio, la IA:
+Trabaja con información incompleta o incierta.
+Utiliza métodos heurísticos: técnicas que no garantizan una solución perfecta, pero funcionan bien en la práctica.
+Ejemplo: En vez de calcular todos los caminos posibles para llegar al trabajo, la IA evalúa solo los más prometedores usando datos de tráfico en tiempo real.
+Resolución de Problemas en Inteligencia Artificial
+¿Qué es la resolución de problemas? La resolución de problemas es una capacidad fundamental de la inteligencia, tanto en humanos como en máquinas. Consiste en encontrar una solución adecuada a una situación que presenta un obstáculo, un objetivo por alcanzar o una decisión por tomar.
+Como seres humanos, resolvemos constantemente una gran variedad de problemas, por ejemplo:
+Encontrar la salida de un laberinto
+Resolver un crucigrama.
+Diagnosticar una enfermedad.
+Tomar decisiones financieras, como invertir en bolsa.
+Ganar en un videojuego estratégico.
+Ejemplo: Al jugar al ajedrez, analizamos el tablero, proyectamos jugadas y evaluamos riesgos. Lo mismo se espera que haga un programa de IA que juegue ajedrez: identificar una situación (estado actual), considerar movimientos (operadores) y llegar a un objetivo (dar jaque mate).
+¿Cómo definimos un problema? Para que una máquina pueda resolver un problema, es necesario definirlo formalmente, mediante elementos comunes que puedan ser interpretados por un algoritmo. Esto se logra a través de los siguientes componentes:
+Estado inicial: punto de partida. Ejemplo: Posición de fichas al comenzar un juego.
+Estado final u objetivo: lo que se quiere lograr. Ejemplo: Todas las fichas ordenadas en un rompecabezas
+Operadores: acciones disponibles para modificar el estado. Ejemplo: Mover una ficha de un lugar a otro.
+Restricciones: limitaciones del entorno o del problema Ejemplo: No se puede mover una ficha fuera del tablero.
+Representación de problemas: Hay distintas maneras de representar un problema para resolverlo automáticamente. Las más comunes son:
+1. Espacio de estados: Se modela el problema como una serie de estados (situaciones posibles) y los caminos entre ellos mediante operadores (acciones). Resolver el problema es encontrar una secuencia de acciones desde el estado inicial al objetivo. Ejemplo: Resolver un laberinto. Cada punto del laberinto es un estado, y cada paso que das es un operador que te lleva a un nuevo estado.
+2. Reducción a subproblemas: El problema se descompone en partes más pequeñas, organizadas en una jerarquía. Ejemplo: Para armar una computadora, primero resolvés subproblemas como instalar el procesador, agregar la memoria, conectar los discos, etc.
+¿Qué es un estado? Un estado es una representación del problema en un momento determinado. Describe todos los elementos relevantes y sus relaciones.
+Estado inicial: situación de partida.
+Estado final: situación deseada.
+Ejemplo: En el juego del 8 puzzle (ver más abajo), un estado es una configuración específica de las fichas en el tablero.
+¿Qué son los operadores? Los operadores son funciones que modifican un estado, transformándolo en otro. Son la forma en que se avanza o retrocede dentro del espacio del problema.
+Cada operador tiene:
+Condiciones de aplicabilidad: cuándo puede usarse.
+Función de transformación: cómo modifica el estado.
+Ejemplo: En el 8 puzzle, un operador podría ser "mover el espacio vacío hacia la izquierda", siempre y cuando no esté en la primera columna.
+¿Qué es el espacio de estados? El espacio de estados es el conjunto de todos los estados posibles de un problema y las conexiones entre ellos mediante operadores. Se puede imaginar como un mapa o grafo donde cada nodo es un estado y cada flecha es una acción.
+Resolver el problema consiste en buscar un camino dentro de ese espacio desde el estado inicial al final. Ejemplo: Como un mapa de carreteras, donde querés ir de tu ciudad actual a otra, y las rutas son los operadores.
+Tipos de soluciones: Existen diferentes tipos de soluciones:
+Cualquiera válida: solo se necesita una que funcione.
+La mejor: optimizada según algún criterio (tiempo, costo, número de pasos).
+Todas las posibles: útil cuando se requiere conocer todas las alternativas.
+Ejemplo: En el 8 puzzle, podrías buscar la solución más corta (menos movimientos).
+El costo de la solución se mide en recursos consumidos (tiempo, memoria, número de pasos, etc.).
+Búsqueda en el espacio de estados
+La búsqueda consiste en explorar el espacio de estados desde el estado inicial hacia el estado objetivo. Es el mecanismo central que utiliza un algoritmo de IA para encontrar soluciones.
+Puede hacerse de varias maneras:
+Búsqueda exhaustiva: analiza todas las opciones posibles.
+Búsqueda informada: usa heurísticas para priorizar caminos más prometedores.
+Ejemplo: En el laberinto, en lugar de probar cada dirección al azar, una búsqueda informada puede elegir avanzar hacia donde parece estar la salida.
+En el peor de los casos, se deben explorar todos los caminos posibles hasta hallar una solución, lo que puede ser costoso en problemas grandes o complejos.
+Resolución de Problemas (Parte 2): Búsqueda en el Espacio de Estados
+¿Qué es la búsqueda en el contexto de la IA? Cuando un agente inteligente necesita resolver un problema, debe encontrar una secuencia de acciones que lo lleve desde el estado actual hasta un estado objetivo deseado. Este proceso se conoce como búsqueda. La búsqueda es, entonces, una técnica fundamental que permite explorar un conjunto de opciones para encontrar la más adecuada. Es lo que permite, por ejemplo, que una IA sepa cómo resolver un rompecabezas, encontrar una ruta óptima o ganar un juego. Ejemplo: Querés viajar desde la ciudad A hasta la ciudad Z. Existen muchas rutas posibles, y tu objetivo es encontrar la más rápida. El agente realiza una búsqueda entre todas las combinaciones de caminos disponibles para elegir la mejor
+¿Qué hace un agente para resolver un problema? Un agente basado en objetivos sigue estos pasos:
+1. Formulación del objetivo: Define el estado final deseado, es decir, qué se quiere lograr. Esta formulación puede ser:
+Concreta: llegar a una ciudad específica.
+Abstracta: estar más cerca del centro o minimizar el tiempo de viaje.
+Ejemplo: El objetivo es "llegar a Bucarest cuanto antes".
+2. Formulación del problema: Se define cómo se va a alcanzar el objetivo. Esto implica:
+Establecer los estados posibles (representaciones del mundo).
+Definir las acciones disponibles (cómo pasar de un estado a otro).
+Aplicar un nivel adecuado de abstracción, eliminando detalles innecesarios que compliquen la resolución.
+Ejemplo:
+Estados: estar en una ciudad de Rumania.
+Acciones: conducir de una ciudad a otra.
+Problema: encontrar la secuencia de ciudades desde Arad hasta Bucarest en el menor tiempo.
+3. Búsqueda: Es el proceso de examinar las diferentes secuencias posibles de acciones para llegar a un estado que cumple el objetivo. Se evalúan distintos caminos y se elige el más conveniente según criterios como costo, distancia, tiempo, etc. Ejemplo: El sistema analiza las rutas Arad → Sibiu → Fagaras → Bucarest, comparándola con otras alternativas y eligiendo la mejor.
+4. Ejecución: Una vez encontrada la mejor secuencia de acciones, el agente ejecuta esas acciones en el entorno real o simulado.
+Componentes clave de una búsqueda: Para que el proceso funcione, necesitamos definir claramente:
+Estado inicial: punto de partida del agente. Ejemplo: "Estoy en Arad".
+Modelo de transición: define cómo las acciones modifican el estado. Ejemplo: "Si conduzco de Arad a Sibiu, ahora estoy en Sibiu".
+Acciones: conjunto de opciones disponibles desde cada estado. Ejemplo: Desde Sibiu, puedo ir a Fagaras o a Rimnicu Vilcea.
+Espacio de búsqueda: el conjunto de todos los estados posibles y las acciones que los conectan. Ejemplo: Un mapa con todas las ciudades y rutas posibles.
+¿Por qué es importante la abstracción? Cuando se formula un problema para una IA, es fundamental eliminar detalles innecesarios que pueden entorpecer la búsqueda. Ejemplo: No es necesario considerar el color del auto o si hay música de fondo mientras conducís. No importante es el tiempo que tarda cada ruta, los kilómetros, el combustible, etc.
+La abstracción permite centrarse solo en lo que es esencial para encontrar una buena solución.
+Ilustración: ejemplo con robot de limpieza
+Imaginemos un robot con el objetivo de limpiar un ambiente. El problema se puede formular de la siguiente manera:
+Estado inicial: robot ubicado en una celda sucia.
+Acciones disponibles: moverse a la izquierda (izq), moverse a la derecha (der), limpiar.
+
+
+Modelo de transición: si está en una celda sucia y ejecuta "limpiar", el estado cambia a limpio; si se mueve, cambia su posición.
+Ejemplo:
+Estado inicial: robot en celda 1 sucia.
+Acción: "limpiar".
+Nuevo estado: celda 1 limpia.
+Acción: "der".
+Nuevo estado: robot en celda 2
+El robot explora secuencias de acciones para lograr su objetivo (que todas las celdas estén limpias), eligiendo la mejor combinación posible.
+Búsqueda en Inteligencia Artificial
+¿Qué es la búsqueda en IA? En Inteligencia Artificial, buscar una solución significa recorrer un espacio de posibles configuraciones (estados) hasta encontrar la que cumple un objetivo. Ejemplo: En un GPS, cuando buscás cómo ir de A a B, el sistema analiza distintas rutas (estados) y acciones (moverse a una ciudad vecina) hasta encontrar la mejor.
+
+Formulación de un problema en IA Para que un agente resuelva un problema, necesitamos:
+Estado inicial Ejemplo: Estar en la ciudad A.
+Estado objetivo Ejemplo: Llegar a la ciudad Z.
+Acciones posibles Ejemplo: "Ir de A a B", "Ir de B a C".
+Restricciones Ejemplo: No pasar por carreteras cortadas
+Costos (opcional) Ejemplo: Tiempo o distancia de cada ruta.
+🌐 Espacio de estados: es la representación de todos los posibles pasos que se pueden dar desde el estado inicial hasta el estado objetivo. Ejemplo clásico: El 8 puzzle, donde hay que ordenar fichas moviendo espacios vacíos. Cada disposición distinta del tablero es un estado.
+¿Qué contiene un estado? Debe contener solo la información esencial. Si ponés demasiados detalles innecesarios, el problema será más difícil de resolver.
+🔁 Operadores y transformaciones: Los operadores son funciones que cambian un estado a otro. Tienen dos partes:
+Condiciones de aplicabilidad: cuándo se puede usar.
+Función de transformación: qué cambia en el estado.
+Ejemplo: En el 8 puzzle, un operador sería "mover el espacio vacío a la izquierda", siempre que no esté en la primera columna.
+🎯 Tipos de problemas
+Problemas con solución única o múltiple Ejemplo: Encontrar cualquier solución válida vs. la mejor solución posible.
+Problemas con restricciones Ejemplo: Problema de las N reinas (colocar reinas sin que se ataquen).
+Problemas de juegos Ejemplo: Ajedrez, donde hay que pensar en movimientos del oponente también.
+📈 Costos y complejidad: Cada operador puede tener un costo asociado, y la solución puede buscar:
+El menor número de pasos.
+El menor costo acumulado.
+Ejemplo: Viajar en menos kilómetros o pagar menos peajes.
+🔍 Algoritmos de búsqueda
+La búsqueda en el espacio de estados se puede realizar con diferentes algoritmos. Veamos los más importantes:
+1️⃣ Búsqueda no informada (ciega)
+A. Búsqueda en Anchura (Breadth-First Search)
+Explora nivel por nivel.
+Usa una cola (FIFO) para nodos abiertos.
+Completa y óptima si los pasos tienen igual costo.
+Costos altos en tiempo y espacio.
+Ejemplo: Visitar primero todas las ciudades a 1 paso de A, luego las que están a 2 pasos, etc.
+B. Búsqueda en Profundidad (Depth-First Search)
+Explora hacia lo más profundo antes de retroceder.
+Usa una pila (LIFO)
+Menor uso de memoria, pero puede quedar atrapada.
+No garantiza encontrar la mejor solución.
+Ejemplo: Ir de A a B, luego a C, luego a D, y solo volver si te estancás.
+C. Búsqueda en Profundidad Iterativa
+Combinación de anchura y profundidad.
+Repite la búsqueda aumentando el límite de profundidad.
+Óptima y completa, con uso de memoria bajo.
+Ejemplo: Primero probás rutas de 1 paso, luego de 2 pasos, luego de 3, etc.
+Búsqueda informada (heurística)
+A. Greedy Best First
+Usa una función heurística h(n) que estima qué tan cerca está un estado de la meta.
+Rápida, pero no siempre encuentra la mejor solución.
+Ejemplo: Elegís la ciudad que parece más cercana a destino, sin pensar cuánto tardaste en llegar hasta ahí.
+B. A* (A estrella)
+Usa f(n) = g(n) + h(n)
+g(n) = costo real hasta ahora
+h(n) = estimación del costo hasta la meta
+Óptimo si la heurística es admisible.
+Ejemplo: El GPS considera cuánto ya manejaste (g) y cuánto falta (h) para elegir el camino más corto total (f).
+Propiedades de los algoritmos
+Propiedad
+Anchura
+Profundidad
+Prof. Iterativa
+A*
+Completo
+Sí
+No (a menos que se limite)
+Sí
+Sí
+Óptimo
+Sí (si costos iguales)
+No
+Sí
+Sí (si h es admisible)
+Tiempo
+Exponencial
+Bajo a veces
+Exponencial
+Variable (mejor si h buena)
+Memoria
+Alta
+Baja
+Baja
+Alta (puede crecer mucho)
+
+
+Funciones heurísticas
+Una heurística es una función que estima lo que falta para llegar al objetivo.
+¿Qué hace una buena heurística?
+Admisible: nunca sobreestima el costo restante. Ejemplo: si el mínimo camino restante es 10, la heurística debe decir ≤10.
+Consistente: la diferencia entre heurísticas de dos estados no supera el costo real entre ellos.
+Más informada: cuanto más cerca esté la estimación del costo real, mejor.
+Ejemplo real: En el 8 puzzle, una heurística común es contar cuántas fichas están fuera de lugar.
+Búsqueda local y con adversarios También hay estrategias especiales como:
+Búsqueda local (como Hill Climbing o Simulated Annealing), que explora vecinos cercanos.
+Algoritmos de juegos (como Minimax), que suponen un oponente y calculan la mejor jugada.
+Ejemplo: Una IA que juega al ajedrez evalúa sus movimientos y los posibles del oponente antes de mover.
+mes 2
+REPRESENTACIÓN DEL CONOCIMIENTO Y APRENDIZAJE EN INTELIGENCIA ARTIFICIAL (IA)
+¿Qué es el conocimiento? "Hechos, información y habilidades adquiridas mediante la experiencia o el aprendizaje para la comprensión teórica o práctica de un tema." – Oxford Dictionary
+El conocimiento se construye jerárquicamente:
+Datos: Elementos crudos (números, hechos, valores sin contexto). Ejemplo: 42, "verde".
+Información: Datos interpretados con contexto Ejemplo: "El semáforo está en verde."
+Conocimiento: Información interiorizada que permite actuar o tomar decisiones. Ejemplo: "Cuando el semáforo está verde, debo avanzar."
+Sabiduría: Aplicación del conocimiento en situaciones complejas. Ejemplo: Decidir no avanzar aunque esté verde porque una ambulancia cruza.
+
+ Clasificación del conocimiento
+Tipo de conocimiento
+Descripción
+Ejemplo
+Explícito
+Se puede expresar, estructurar, almacenar.
+Manual de usuario, lista de pasos.
+Tácito
+Está en la experiencia, difícil de verbalizar.
+Reconocer una cara sin explicar cómo.
+Teórico
+Generaliza conceptos y principios.
+Ley de la gravedad.
+Empírico
+Basado en observación directa.
+Saber que una calle se inunda si llueve mucho.
+Simbólico (IA)
+Representado con reglas, hechos, relaciones.
+Sistema experto con lógica.
+Sub-simbólico (IA)
+No se expresa, se infiere por aprendizaje.
+Red neuronal que reconoce imágenes.
+
+Aprendizaje en Inteligencia Artificial El aprendizaje es clave en IA. En lugar de programar cada detalle, dejamos que los sistemas aprendan de los datos.Se usa especialmente en Machine Learning (ML), un subconjunto de la IA que permite que una máquina descubra patrones sin ser programada explícitamente.
+Tipos de aprendizaje automático
+Tipo
+Definición
+Ejemplo
+Supervisado
+Se entrena con datos ya etiquetados (entrada + salida esperada).
+Diagnóstico médico, detección de spam.
+No supervisado
+Se entrena sin etiquetas. Busca patrones o grupos.
+Segmentación de clientes, detección de anomalías.
+Semi-supervisado
+Usa pocos datos etiquetados y muchos sin etiquetar.
+Clasificación de textos cuando solo algunos están marcados.
+Por refuerzo
+Aprende por prueba y error, mejorando con recompensas o castigos.
+IA jugando videojuegos o guiando robots.
+
+Aprendizaje Supervisado
+Usa ejemplos históricos para predecir salidas.
+Tiene dos grandes subtipos:
+Regresión: Predice valores continuos (precio, temperatura).
+Clasificación: Predice categorías (spam/no spam, positivo/negativo).
+Algoritmos comunes:
+Regresión lineal y logística
+Árboles de decisión y Random Forest
+Support Vector Machine (SVM)
+k-Nearest Neighbors (k-NN)
+Aprendizaje No Supervisado: Busca estructura interna de los datos: agrupamientos, patrones, asociaciones.
+Técnicas comunes:
+Clustering (agrupamiento): K-Means, clustering jerárquico, modelos gaussianos.
+Reducción de dimensionalidad: PCA (análisis de componentes principales), selección de característicasAprendizaje por Refuerzo: Un agente (IA) interactúa con un entorno tomando decisiones, y aprende mediante recompensas.
+Aplicaciones:
+Videojuegos
+Robots autónomos
+Sistemas de recomendación
+Algoritmos:
+Q-Learning
+SARSA
+Programación dinámica
+Redes Neuronales: Son sistemas computacionales inspirados en el cerebro humano. Están compuestas por capas de "neuronas" artificiales que ajustan conexiones (pesos) para aprender.
+Se utilizan en aprendizaje profundo (deep learning).
+El aprendizaje ocurre durante el "entrenamiento", ajustando pesos para minimizar errores.
+Aplicaciones:
+Visión artificial
+Reconocimiento de voz
+Diagnóstico médico
+Traducción automática
+Chatbots inteligentes
+Reconocimiento de Patrones: Es la habilidad de clasificar entradas (imágenes, sonidos, textos) según clases o categorías. Usa algoritmos para extraer características y clasificarlas.
+Fases:
+Sensores: Capturan señales (cámara, micrófono, etc.).
+Segmentación: Separar objetos dentro de la señal.
+Extracción de características: Medir propiedades (color, tamaño, forma).
+Clasificación: Asignar a una clase según los datos obtenidos.
+Representación del Conocimiento: En IA se necesita representar el conocimiento para poder usarlo. Esto incluye definir hechos, reglas, relaciones, principios y eventos.
+Componentes del conocimiento explícito:
+Elemento
+Descripción
+Ejemplo
+Hechos
+Información específica.
+"El fondo de una señal de STOP es rojo."
+Objetos/Individuos
+Elementos concretos o abstractos.
+"Número 3", "Comandante Spock".
+Clases
+Agrupaciones con características comunes.
+"Estudiantes", "Facturas".
+Relaciones
+Vínculos entre clases u objetos.
+"Estudiante cursa asignatura".
+Principios/Reglas
+Condiciones o derivaciones.
+"Edad no puede ser negativa."
+Eventos
+Acciones posibles.
+"Registrar nuevo usuario."
+
+
+Tipos de representación del conocimiento
+Declarativa:
+Relacional: tipo tabla o base de datos.
+Inferencial: usa lógica para deducir hechos nuevos.
+Heredable: clases y subclases organizadas jerárquicamente (taxonomía)
+Procedimental:
+Algoritmos: pasos para resolver problemas.
+Estrategias: decisiones y planificación.
+Modelos: representaciones abstractas para guiar soluciones.
+Procesamiento del Lenguaje Natural (PLN) Permite que las máquinas entiendan y generen lenguaje humano. Es uno de los campos más desafiantes de la IA.
+Aplicaciones:
+Traducción automática
+Chatbot
+Clasificación de sentimientos en redes
+Resumen de textos
+Recuperación de información
+Tecnologías utilizadas:
+Word2Vec, GloVe (modelos de representación de palabras)
+Redes neuronales recurrentes (RNN, LSTM)
+Transformers (GPT, BERT)
+Reconocimiento automático del habla: La IA convierte voz en texto usando modelos de audio y texto.
+Dificultades: Acentos, velocidad, ruido, pronunciación
+Usos:
+Dictado por voz
+Interfaces manos libres
+Videojuegos por comando de voz
+Publicidad dirigida por voz
+Ejemplo unificado: Videojuego como entorno de IA
+En juegos como Pac-Man:
+Cada fantasma tiene un patrón de movimiento distinto (conocimiento tácito y procedimental).
+La IA puede aprender cómo responder a los enemigos (aprendizaje por refuerzo)
+Reconoce mapas, colores y posiciones (reconocimiento de patrones).
