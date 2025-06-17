@@ -8,7 +8,7 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "IA Wiki - Enciclopedia de Sistemas Inteligentes",
+  title: "Enciclopedia de Sistemas Inteligentes",
   description: "Explora el mundo de la Inteligencia Artificial con nuestra enciclopedia completa",
     generator: 'v0.dev'
 }

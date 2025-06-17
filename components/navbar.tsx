@@ -24,7 +24,7 @@ export function Navbar() {
               <div className="p-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg">
                 <Brain className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xl font-bold text-gray-900">IA Wiki</span>
+              <span className="text-xl font-bold text-gray-900">Sistemas Inteligentes</span>
             </Link>
           </div>
 
@@ -43,14 +43,7 @@ export function Navbar() {
 
           {/* Auth Section */}
           <div className="flex items-center space-x-4">
-            <Button
-              disabled
-              size="sm"
-              className="opacity-50 cursor-not-allowed"
-              title="Próximamente - Configuración de Google OAuth pendiente"
-            >
-              Iniciar Sesión
-            </Button>
+            
 
             {/* Mobile menu button */}
             <div className="md:hidden">
